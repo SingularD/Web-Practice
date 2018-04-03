@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Demo1</title>
 </head>
 <body>
-
+<table border="6">
+    <tr>
+        <td width="110" align="right">用户名：</td>
+        <td width="160"><input type="text" id="t1"></td>
+    </tr>
+    <tr>
+        <td align="right">联系电话</td>
+        <td><input type="number" id="t2"></td>
+    </tr>
+    <tr>
+        <td align="right">密码</td>
+        <td><input type="password" id="t3"></td>
+    </tr>
+    <tr>
+        <td align="right">确认密码</td>
+        <td><input type="password" id="t4" onblur="check()"></td>
+    </tr>
+    <tr>
+        <td align="right">性别</td>
+        <td><input type="radio" name="r1" id="s1">男
+        <input type="radio" name="r2" id="s2">女</td>
+    </tr>
+    <tr>
+        <td align="right">爱好</td>
+        <td>
+            <input type="checkbox" id="c1">体育
+            <input type="checkbox" id="c2">音乐<br>
+            <input type="checkbox" id="c3">文学
+            <input type="checkbox" id="c4">其它
+        </td>
+    </tr>
+    <tr>
+        <td align="right">特长</td>
+        <td>
+            <select id="select">
+                <option value="书法">书法</option>
+                <option value="写作">写作</option>
+                <option value="编程">编程</option>
+                <option value="阅读">阅读</option>
+                <option value="音乐">音乐</option>
+                <option value="其它">其它</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" id="submit1" value="提交" onclick="aa()">
+            <input type="reset" id="submit2" value="重置">
+        </td>
+    </tr>
+</table>
+<script>
+    function $(x) {
+        return document.getElementById(x);
+    };
+    function check() {
+        var b = $("t3").value == $("t4").value
+        return b?true:alert("请输入正确密码")
+    }
+    function aa() {
+        var str = "";
+        str += "\n用户名：" + $("t1").value;
+        str += "\n电话" + $("t2").value;
+        str += "\n密码" + $("t3").value;
+        str += "\n性别" + $("s1").checked?"男":"女";
+        str += "\n爱好" + $("c1").checked?"体育":""
+        + $("c1").checked?"音乐":""
+        + $("c1").checked?"文学":""
+        + $("c1").checked?"其它":"";
+        str += "\n特长" + $("select").value;
+        alert("你的基本信息是：\n" + str)
+    }
+</script>
 </body>
 </html>
