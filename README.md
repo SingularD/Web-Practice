@@ -1,1 +1,1 @@
-# web-practice
+# JS平时练习
