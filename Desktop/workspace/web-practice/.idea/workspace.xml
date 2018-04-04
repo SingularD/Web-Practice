@@ -14,10 +14,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo2/demo2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="-288">
               <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo2/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+            <state relative-caret-position="29">
+              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -52,8 +52,9 @@
         <option value="$PROJECT_DIR$/Demo1/demo1.html" />
         <option value="$PROJECT_DIR$/object/test1.html" />
         <option value="$PROJECT_DIR$/object/app.js" />
-        <option value="$PROJECT_DIR$/Demo2/app.js" />
         <option value="$PROJECT_DIR$/Demo2/demo2.html" />
+        <option value="$PROJECT_DIR$/object/test.js" />
+        <option value="$PROJECT_DIR$/Demo2/app.js" />
       </list>
     </option>
   </component>
@@ -91,6 +92,11 @@
               <item name="web-practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-practice" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web-practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-practice" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -117,11 +123,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.test.js">
     <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/object" />
+    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/object" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -141,17 +153,18 @@
       <workItem from="1522721346125" duration="230000" />
       <workItem from="1522722406991" duration="2393000" />
       <workItem from="1522725819597" duration="1987000" />
-      <workItem from="1522830487751" duration="1947000" />
+      <workItem from="1522830487751" duration="3815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6557000" />
+    <option name="totallyTimeSpent" value="8425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="1376" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12209302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12209302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -217,6 +230,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -236,21 +250,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo2/app.js">
+    <entry file="file://$PROJECT_DIR$/object/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="81">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo2/demo2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="-288">
           <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo2/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,10 +1,10 @@
 function $(x) {
     return document.getElementById(x);
-}
+}//简化DOM操作
 
-var FlagNew = false;
-var tatol = 0;
-var Opp;
+var FlagNew = false;//之前是否使用过运算符，默认为空
+var tatol = 0;//输入运算符之前的数据
+var Opp;//记录运算符
 
 function Decimal() {
     var txt = $("txtnum");
@@ -12,11 +12,11 @@ function Decimal() {
         txt.value = "0."
     }else {
         if(txt.value.indexOf('.') == -1){
-            txt.value = "."
+            txt.value += "."
         }
     }
     FlagNew = false;
-}
+}//小数点操作
 
 function num(Num) {
     var txt = $("txtnum");
@@ -30,7 +30,7 @@ function num(Num) {
             txt.value += Num
         }
     }
-}
+}//按键获取数字值
 
 function Oper(Op) {
     var Num1 = $("txtnum").value;
@@ -51,4 +51,4 @@ function Oper(Op) {
     }
     $("txtnum").value = tatol;
     Opp = Op;
-}
+}//得到结果
