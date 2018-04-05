@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<script>
+    function $(x) {
+        return document.getElementById(x)
+    }
+    function num(a) {
+        var txt = document.getElementById("txtnum");
+        if(txt.value == "0"){
+            txt.value = a;
+        }else {
+            txt.value += a;
+        }
+        return txt.value;
+    }
+    function clean() {
+        $("txtnum").value = '0';
+    }
+    function Oper(op) {
+        var txt = document.getElementById("txtnum");
+        txt.value += op
+    }
+    function Decimal() {
+        var txt = document.getElementById("txtnum");
+        txt.value += '.'
+    }
+    function getResult() {
+        var txt = $("txtnum").value;
+        $("txtnum").value = eval(txt);
+    }
+
+</script>
+<body>
+<table border="3" cellspacing="10">
+    <tr>
+        <td>
+            <input type="text" id="txtnum" size="13" value="0" style="text-align: right">
+        </td>
+        <td align="center">
+            <input type="button" id="b0" value="C" onclick="clean()">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td><input type="button" id="b1" value="7" onclick="num('7')"></td>
+                    <td><input type="button" id="b2" value="8" onclick="num('8')"></td>
+                    <td><input type="button" id="b3" value="9" onclick="num('9')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b5" value="4" onclick="num('4')"></td>
+                    <td><input type="button" id="b6" value="5" onclick="num('5')"></td>
+                    <td><input type="button" id="b7" value="6" onclick="num('6')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b9" value="1" onclick="num('1')"></td>
+                    <td><input type="button" id="b10" value="2" onclick="num('2')"></td>
+                    <td><input type="button" id="b11" value="3" onclick="num('3')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="0" value="0" onclick="num('0')"></td>
+                    <td><input type="button" id="." value="." onclick="Decimal()"></td>
+                    <td><input type="button" id="=" value="=" onclick="getResult()"></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" id="b4" value="+" onclick="Oper('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b8" value="-" onclick="Oper('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b12" value="*" onclick="Oper('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b16" value="/" onclick="Oper('/')">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,11 +1,7 @@
-function app() {
-    var Flag = false;
-    var a = "a";
-    var b = 'b';
-    if(Flag){
-        return a;
-    }else {
-        return b;
-    }
+var object1={
+    name: "lisongwei",
+    age: "100"
 }
-console.log(app());
+object1.class = "3";
+delete object1.name;
+console.log(object1);
