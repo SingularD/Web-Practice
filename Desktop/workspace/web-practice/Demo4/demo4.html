@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS时间对象</title>
+</head>
+<body>
+<h1>当前时间是：<span id="time">正在获取时间中...</span></h1>
+<h1>当前时间是：<span id="time2">正在获取时间中...</span></h1>
+<script>
+    function myTime() {
+        var time = new Date();
+        // document.write(time);
+        document.getElementById("time").innerHTML = time;
+        setTimeout("myTime()",1000);
+    }
+    myTime();
+    function myRealTime() {
+        var time = new Date();
+        var year = time.getFullYear();
+        var month = time.getMonth()+1;
+        var day = time.getDate();
+        var date = time.getDate()-1;
+        document.getElementById("time2").innerHTML =
+            year + "年 " + month + "月 " + day + "日 " + "星期" + date + " "
+            + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
+        setTimeout("myRealTime()",1000);
+    }
+    myRealTime()
+</script>
+</body>
+</html>
