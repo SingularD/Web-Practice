@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Math对象</title>
+    <script src="app.js"></script>
+    <style>
+        #y{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-
+<input id="inp" type="text">
+<input id="y" type="text" placeholder="请输入指数值。。。">
+<select id="pro" onchange="change()">
+    <option>sin</option>
+    <option>cos</option>
+    <option>tan</option>
+    <option>Ln</option>
+    <option id="pow">x^y</option>
+</select>
+<input type="button" value="submit" id="res" onclick="res()">
+<h1 id="show">请输入数字和运算符...</h1>
 </body>
 </html>
