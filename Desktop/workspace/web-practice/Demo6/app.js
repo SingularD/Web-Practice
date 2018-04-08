@@ -1,19 +1,32 @@
 function $(x) {
     return document.getElementById(x)
 }
+function getOpr() {
+    var op = ["+","-","*","/"];
+     var aOp = op[parseInt(Math.random()*4)];
+    return aOp
+}
+var label = "";
 function getNum() {
-    var myNumber = parseInt(Math.random()*99)+1;
-    return myNumber;
+    var a = parseInt(Math.random()*99+1);
+    var b = parseInt(Math.random()*99+1);
+    var aquation = a + getOpr() + b ;
+    $("opr").innerHTML = aquation + "=";
+    var answer = parseInt(eval(aquation));
+    label += aquation  + "<br>";
+    console.log(eval(aquation));
+    $("show").innerHTML = label;
+    return answer;
 }
-function chack() {
-    var number = parseInt($("inp").value);
-    $("show").innerHTML = getNum();
-    if (getNum() == number){
-        alert("恭喜你才对了！")
+function submit() {
+    var result = parseInt($("inp").value);
+    var myAnswer = eval(result);
+    if(myAnswer == getNum()){
+        $("show").innerHTML = "恭喜你，回答正确！"
+    }else if(myAnswer == ""){
+        alert("请输入答案！")
     }else {
-        alert("抱歉你猜错了，再接再厉")
+        $("show").innerHTML = "回答错误，再接再厉！"
+
     }
-}
-function reset() {
-    $("inp").value = " "
 }

@@ -6,10 +6,12 @@
     <script src="app.js"></script>
 </head>
 <body>
-<p id="tips">请猜一个1~99的数字</p>
+<p id="tips">请给出下列运算的结果：</p>
+<p id="opr"></p>
 <input type="text" id="inp">
-<input type="button" id="res" value="开始" onclick="chack()">
-<input type="button" id="reset" value="重置" onclick="reset()">
-<p id="show">开始后出现结果</p>
+<input type="button" id="res" value="出题" onclick="getNum()">
+<input type="button" id="reset" value="提交答案" onclick="submit()">
+<p>回答列表</p>
+<div id="show"></div>
 </body>
 </html>
