@@ -7,27 +7,25 @@ function getOpr() {
     return aOp
 }
 var label = "";
-function getNum() {
-    var a = parseInt(Math.random()*99+1);
-    var b = parseInt(Math.random()*99+1);
-    var aquation = a + getOpr() + b ;
-    $("opr").innerHTML = aquation + "=";
-    var answer = parseInt(eval(aquation));
-    label += aquation  + "<br>";
-    console.log(typeof eval(aquation));
+var a,b,equation;
+function getRandom() {
+     a = parseInt(Math.random()*99+1);
+     b = parseInt(Math.random()*99+1);
+     equation = a + getOpr() + b;
+    $("opr").innerHTML = equation + "=";
+}
+function getNum(equation) {
+
+    var result = eval(equation);
+    label += equation + "<br>";
     $("show").innerHTML = label;
-    return answer;
+    console.log(result+"getNum()");
+    return result;
 }
 function submit() {
-    var result = parseInt($("inp").value);
-    var myAnswer = parseInt(eval(result));
-    console.log(typeof myAnswer)
-    if(myAnswer == getNum()){
-        $("show").innerHTML = "恭喜你，回答正确！"
-    }else if(myAnswer == ""){
-        alert("请输入答案！")
-    }else {
-        $("show").innerHTML = "回答错误，再接再厉！"
-
+    var myReault = $("inp").value;
+    console.log(myReault+"submit()");
+    if(getNum(equation) == myReault){
+        alert("回答正确！")
     }
 }
