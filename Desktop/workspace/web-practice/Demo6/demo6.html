@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>四则运算练习器</title>
     <script src="app.js"></script>
 </head>
-<body>
-<p id="tips">请给出下列运算的结果：</p>
+<p>
+<p id="tips">请给出下列运算的结果：</p><br>
+<p>总共出题：<span id="all"></span><br>回答正确：<span id="correct"></span></p>
 <p id="opr"></p>
 <input type="text" id="inp">
 <input type="button" id="res" value="出题" onclick="getRandom()">
