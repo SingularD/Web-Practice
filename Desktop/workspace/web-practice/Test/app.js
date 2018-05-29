@@ -35,9 +35,21 @@ function getPosition(event) {
     return {'x' : e.clientX,'y' : e.clientY}
 }
 
+function fontsizeChange(x) {
+    let size = parseInt(x/30);
+    return size;
+}
+
 function change() {
     document.getElementById('Xval').innerHTML = getPosition().x;
     document.getElementById('Yval').innerHTML = getPosition().y;
+    document.getElementById('title').style.display = "";
+    document.getElementById('title').style.fontSize = fontsizeChange(getPosition().x) + 'px';
+    if (getPosition().x > 500){
+        document.getElementById('title').innerHTML = '大于500';
+    } else {
+        document.getElementById('title').innerHTML = '这是一个标题';
+    }
 }
 
 window.addEventListener('mousemove',change);
