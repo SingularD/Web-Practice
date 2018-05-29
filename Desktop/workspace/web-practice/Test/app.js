@@ -36,7 +36,8 @@ function getPosition(event) {
 }
 
 function change() {
-    document.getElementById('Xval').innerHTML = getPosition(onmousemove).x;
-    document.getElementById('Yval').innerHTML = getPosition(onmousemove).y;
+    document.getElementById('Xval').innerHTML = getPosition().x;
+    document.getElementById('Yval').innerHTML = getPosition().y;
 }
 
+window.addEventListener('mousemove',change);
