@@ -22,10 +22,21 @@
 //     }
 // };
 
-document.getElementById("btn").addEventListener("click",change);
-function change() {
-    document.getElementById("title").innerHTML = "this is a new title";
-}
+// document.getElementById("btn").addEventListener("click",change);
+// function change() {
+//     document.getElementById("title").innerHTML = "this is a new title";
+// }
 // const change = () => {
 //   document.getElementById("title").innerHTML = "this is a new title";
 // };
+
+function getPosition(event) {
+    let e = event || window.event;
+    return {'x' : e.clientX,'y' : e.clientY}
+}
+
+function change() {
+    document.getElementById('Xval').innerHTML = getPosition(onmousemove).x;
+    document.getElementById('Yval').innerHTML = getPosition(onmousemove).y;
+}
+
