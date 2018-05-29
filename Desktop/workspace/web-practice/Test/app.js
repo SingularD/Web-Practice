@@ -11,13 +11,21 @@
     // console.log(document.getElementById('title').innerHTML);
     // document.getElementById("title").innerHTML = 'hhh';
 // };
-var change = function () {
-    var val = document.getElementById("title").innerHTML;
-    var one = "这是一个标题";
-    var after = "this is a new title";
-    if (val === one ){
-        document.getElementById("title").innerHTML = after;
-    }else {
-        document.getElementById("title").innerHTML = one;
-    }
-};
+// var change = function () {
+//     var val = document.getElementById("title").innerHTML;
+//     var one = "这是一个标题";
+//     var after = "this is a new title";
+//     if (val === one ){
+//         document.getElementById("title").innerHTML = after;
+//     }else {
+//         document.getElementById("title").innerHTML = one;
+//     }
+// };
+
+document.getElementById("btn").addEventListener("click",change);
+function change() {
+    document.getElementById("title").innerHTML = "this is a new title";
+}
+// const change = () => {
+//   document.getElementById("title").innerHTML = "this is a new title";
+// };
