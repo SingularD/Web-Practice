@@ -23,12 +23,12 @@
 // };
 
 // document.getElementById("btn").addEventListener("click",change);
-// function change() {
-//     document.getElementById("title").innerHTML = "this is a new title";
-// }
-// const change = () => {
-//   document.getElementById("title").innerHTML = "this is a new title";
-// };
+function change2() {
+    document.getElementById("title").innerHTML = "this is a new title";
+}
+const change = () => {
+  document.getElementById("title").innerHTML = "this is a new title";
+};
 
 function getPosition(event) {
     let e = event || window.event;
